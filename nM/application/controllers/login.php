@@ -28,7 +28,7 @@ class Login extends CI_Controller{
 		$data['mainPage'] = 'Dashboard';
 		$data['subPage'] = 'dashboard';
 
-		$data['title'] = 'ADLGM Dashboard';
+		$data['title'] = 'Next Money Dashboard';
 
 		$data['headerCss'] = 'headerCss/dashboardCss';
 		$data['footerJs'] = 'footerJs/dashboardJs';
