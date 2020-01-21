@@ -14,7 +14,7 @@
 						<div class="section-heading-line"></div>
 					</div>
 					<div class="text-content-big mt-10">
-						<p>Next Money P.vt. L.td., which started its operations in the year 2020, is a leading direct selling company dealing in Health Care, Personal Care, FMCG Products, Furniture Items, Electronic Items & Recharge. Next Money is constantly growing at a phenomenal rate every year. The growth rate in itself speaks volumes about the quality of the products, the marketing plan and the management that has been able to deliver such a rewarding and sustainable system.</p>
+						<p>Next Money Pvt. Ltd., which started its operations in the year 2020, is a leading direct selling company dealing in Health Care, Personal Care, FMCG Products, Furniture Items, Electronic Items & Recharge. Next Money is constantly growing at a phenomenal rate every year. The growth rate in itself speaks volumes about the quality of the products, the marketing plan and the management that has been able to deliver such a rewarding and sustainable system.</p>
 					</div>
 
 					<!-- List Start -->

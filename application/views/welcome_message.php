@@ -119,44 +119,14 @@ Samrat Shukla
 		<div class="row">
 			<div class="col-md-5 col-sm-12 col-12">
 				<div class="section-heading left-holder wow fadeIn animated" data-wow-delay=".1s">
-					<h4 class="bold">Introduction <span class="italic libre-baskerville primary-color " style="font-color:#1949b5 !important;">ADLGM Sales Pvt. Ltd. </span></h4>
+					<h4 class="bold">Introduction <span class="italic libre-baskerville primary-color " style="font-color:#1949b5 !important;">Next Money Pvt. Ltd. </span></h4>
 					<div class="section-heading-line"></div>
 				</div>
 				<div class="text-content wow fadeIn animated" data-wow-delay=".15s">
-					<p>ADLGM Sales Pvt. Ltd. परिवार में आपका हार्दिक स्वागत है | अत्यंत प्रसन्नता का विषय है की आपके विश्वास एवं परम सहयोग के होते हुए कंपनी विगत साल से MLM के क्षेत्र में कार्य कर रही है | हाल ही में ADLGM Sales Pvt. Ltd. ने अपने कार्य का विस्तार करते हुए रियल स्टेट, हेल्थ केयर, पर्सनल केयर, FMCG प्रोडक्ट्स एवं शिक्षा के क्षेत्र में कदम रखा है |</p> 
+					<p>Next.Money Pvt. Ltd. परिवार में आपका हार्दिक स्वागत है | अत्यंत प्रसन्नता का विषय है की आपके विश्वास एवं परम सहयोग के होते हुए कंपनी विगत साल से MLM के क्षेत्र में कार्य कर रही है | हाल ही में Next Money Pvt. Ltd. ने अपने कार्य का विस्तार करते हुए रियल स्टेट, हेल्थ केयर, पर्सनल केयर, FMCG प्रोडक्ट्स एवं शिक्षा के क्षेत्र में कदम रखा है |</p> 
 					
 				</div>
-				<div class="mt-15 wow fadeIn animated" data-wow-delay=".2s">
-				
-					<a href="<?php echo base_url();?>index.php/welcome/read"  target="_blank" class="button-md primary-button">Read More</a>
-				</div>
-			</div>
-			<div class="col-md-7 col-sm-12 col-12">
-				<div class="row pl-30-md">
-					<div class="col-md-6 col-sm-6 col-12 wow fadeIn animated" data-wow-delay=".1s" data-wow-duration="1.5s">
-						<div class="service-overlay">
-							<img src="<?php echo base_url();?>assets/img/4.jpg" alt="img">
-							<div class="service-overlay-box center-holder">
-								<h4>Investment Advisor</h4>
-								<p> </p>
-								<a href="#">Learn More</a>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-md-6 col-sm-6 col-12 wow fadeIn animated" data-wow-delay=".15s" data-wow-duration="1.5s">
-						<div class="service-overlay">
-							<img src="<?php echo base_url();?>assets/img/1.jpg" alt="img">
-							<div class="service-overlay-box center-holder">
-								<h4>Staffing Consultant</h4>
-								<p> </p>
-								<a href="#">Learn More</a>
-							</div>
-						</div>
-					</div>					
-				</div>
-			</div>			
-		</div>
 		
 	</div>
 </div>
@@ -174,25 +144,24 @@ Samrat Shukla
 			<!--<div class="col-md-5 col-sm-12 col-12 wow fadeIn animated" data-wow-delay=".1s" data-wow-duration="1.5s">
 				<img src="<?php echo base_url();?>assets/img/handshake.jpg" class="rounded-border shadow-primary full-width" alt="img">
 			</div>		-->	
-			<div class="col-md-7 col-sm-12 col-12">
+			<div class="col-md-12 col-sm-12 col-12">
 				<div class="pl-45-md">
 					<div class="section-heading left-holder wow fadeIn animated" data-wow-delay=".1s">
 						<h3 class="bold">We provide a Business Opportunity to <span class="italic libre-baskerville primary-color">Fulfil Your Dreams.</span></h3>
 						<div class="section-heading-line"></div>
 					</div>
 					<div class="text-content-big mt-10 wow fadeIn animated" data-wow-delay=".15s">
-						<p>इस व्यवसाय से लाभ प्राप्त करने के लिए ADLGM Sales Pvt. Ltd. ग्रुप द्वारा उपलब्ध पैकेजों में से किसी एक को अपनाते हुए ऑनलाइन पंजीकरण के द्वारा अपना एकअपने सपने को सच करने के लिए, आप एक स्वतंत्र व्यवसाय के मालिक बन जाते हैं |</p>
+						<p>इस व्यवसाय से लाभ प्राप्त करने के लिए Next money Pvt. Ltd. ग्रुप द्वारा उपलब्ध पैकेजों में से किसी एक को अपनाते हुए ऑनलाइन पंजीकरण के द्वारा अपना एकअपने सपने को सच करने के लिए, आप एक स्वतंत्र व्यवसाय के मालिक बन जाते हैं |</p>
 					</div>
 					<span class="italic libre-baskerville primary-color">Types of Income</span>
 					<!-- List Start -->
 					<div class="mt-25 wow fadeIn animated" data-wow-delay=".2s">
 						<ul class="primary-list">
-							<li><i class="fa fa-check-square"></i>Direct Income</li>
-							<li><i class="fa fa-check-square"></i>Binary Income</li>
+							<li><i class="fa fa-check-square"></i>Single Leg</li>
+							<li><i class="fa fa-check-square"></i>S-Ponser Income</li>
 							<li><i class="fa fa-check-square"></i>Auto Pool Income</li>
-							<li><i class="fa fa-check-square"></i>Product 100% MRP</li>
-							<li><i class="fa fa-check-square"></i>Rewards(Upgrating Package)</li>
-							<li><i class="fa fa-check-square"></i>Royalty 2% After Crown</li>
+							<li><i class="fa fa-check-square"></i>Royalty Income</li>
+							
 						</ul>
 					</div>
 					<!-- List End -->

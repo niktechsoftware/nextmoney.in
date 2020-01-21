@@ -87,7 +87,7 @@
 				<ul class="top-bar-info">				 
 					<!--<li><i class="fas fa-map-marker-alt"></i>Address:Word No.4 Ambedkar Nagar Kasia Kushinagar 274402
 </li>-->
-					<li><i class="fas fa-phone-square"></i>+91 7860288090</li>
+					<li><i class="fas fa-phone-square"></i>+91 8115857321</li>
 					<li><i class="fa fa-envelope"></i>info@gmail.com</li>
 				</ul>					
 			</div>
