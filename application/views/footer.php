@@ -7,7 +7,7 @@
 				<a href="#"><img src="<?php echo base_url();?>assets/img/logos/adl1.jpg" alt="img" width="150"></a>
 
 				<div class="mt-20">
-					<p>ADLGM Sales Pvt. Ltd. परिवार में आपका हार्दिक स्वागत है | अत्यंत प्रसन्ता का विषय है की आपके विश्वास एवं परम सहयोग के होते हुए कंपनी विगत साल से MLM के क्षेत्र में कार्य कर रही है |
+					<p>Next Money Pvt. Ltd. परिवार में आपका हार्दिक स्वागत है | अत्यंत प्रसन्ता का विषय है की आपके विश्वास एवं परम सहयोग के होते हुए कंपनी विगत साल से MLM के क्षेत्र में कार्य कर रही है |
 					हमारी कंपनी में कई वर्षों के अनुभवी मेनेजमेंट सदैव आपके साथ हैं |</p>	
 				</div>
 				
@@ -35,10 +35,10 @@
 			<div class="col-md-3 col-sm-6 col-12">
 				<h3>Contact Info</h3>
 				<ul class="footer-style-1-contact-info">
-				    <li><i class="fa fa-phone"></i> <span>+91 7860288090</span></li>
-				    <li><i class="fa fa-phone"></i> <span>+91 9506804800</span></li>
+				    <li><i class="fa fa-phone"></i> <span>+91 8115857321</span></li>
+				    <li><i class="fa fa-phone"></i> <span></span></li>
 					<li><i class="fa fa-envelope-open"></i> <span>info@gmail.com</span></li>
-					<li><i class="fa fa-map-marker-alt"></i> <span>Address:Ward No.4 Ambedkar Nagar Kasia Kushinagar 274402</span>
+					<li><i class="fa fa-map-marker-alt"></i> <span>Address:Munshi puliya basudev inter collage lucknow -226028</span>
 </li>
 					
 				</ul>
@@ -82,12 +82,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-12">
-					<h5>ADLGM Group © 2019. All Copy Rights Reserved.</h5>
+					<h5>Next Money © 2019. All Copy Rights Reserved.</h5>
 				</div>
 
 				<div class="col-md-6 col-sm-6 col-12">
 					<ul class="footer-style-1-bar-links">
-						<li><a href="#" target="_blank">Developed By : www.adlgm.in.net</a></li>
+						<li><a href="#" target="_blank">Developed By : www.nextmoney.in</a></li>
 						
 					</ul>
 				</div>

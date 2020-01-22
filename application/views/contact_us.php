@@ -15,8 +15,8 @@
 						</div>
 						<div class="contact-box-text">
 							<h5>Office</h5>
-							<p>Ward No.4 Ambedkar Nagar Kasia Kushinagar - 274402, (U.P.)<br />
-							Contact No. : +91 7860288090, +91 9506804800
+							<p>Munshi Puliya Basudev inter Collage Lucknow - 226028, (U.P.)<br />
+							Contact No. : +91 8115857321, +91 9140650783
 							</p>
 						</div>
 					</div>
@@ -38,7 +38,7 @@
 						</div>
 						<div class="contact-box-text">
 							<h5>Phone</h5>
-							<p>1800-xxx-xxxx</p>
+							<p>8115857321</p>
 						</div>
 					</div>
 
@@ -48,7 +48,7 @@
 						</div>
 						<div class="contact-box-text">
 							<h5>Email</h5>
-							<p>info@adl.in.net</p>
+							<p></p>
 						</div>
 					</div>
 

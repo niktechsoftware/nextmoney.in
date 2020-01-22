@@ -3,12 +3,11 @@
 
 
 
-
 <div class="mfp-content"><div id="newslater-popup" class="white-popup-block open align-center">
   <div class="nl-popup-main">
     <div class="nl-popup-inner">
       <div class="newsletter-inner"> 
-        <img src="<?php echo base_url();?>assets/img/bon.jpeg">
+        <img src="http://adlgm.in.net/assets/img/bon.jpeg">
       </div>
     </div>
   </div>
@@ -19,12 +18,13 @@
 
 <?php $this->load->view("header")?>
 <!-- Navbar END --> </div><!-- Slider START -->
+<!-- Navbar END --> </div><!-- Slider START -->
 <div class="swiper-main-slider swiper-container">
 	<div class="swiper-wrapper">
 	    
 		<!-- Slide 1 Start -->
 		
-		<!--<div class="swiper-slide" style="margin-top:10%; background-image:url(<?php echo base_url();?>assets/img/banner11.jpg); background-size:cover; ">-->
+		<!--<div class="swiper-slide" style="margin-top:10%; background-image:url(http://adlgm.in.net/assets/img/banner11.jpg); background-size:cover; ">-->
 		    <div class="swiper-slide" >
 		        <img src="<?php echo base_url();?>assets/img/banner11.jpg" style="width:100%; height:90%; padding-left:40px;">
 			<div class="container">
@@ -44,7 +44,7 @@
 		
 		<!-- Slide 2 Start -->	
 		
-		<!--<div class="swiper-slide" style="background-image:url(<?php echo base_url();?>assets/img/banner12.jpg); background-size:cover; ">-->
+		<!--<div class="swiper-slide" style="background-image:url(http://adlgm.in.net/assets/img/banner12.jpg); background-size:cover; ">-->
 		<div class="swiper-slide" >
 		        <img src="<?php echo base_url();?>assets/img/banner12.jpg" style="width:100%; height:90%; padding-left:40px;">
 			<div class="container">
@@ -64,7 +64,7 @@
 			
 			<!-- Slide 3 Start -->
 			
-		<!--<div class="swiper-slide" style="background-image:url(<?php echo base_url();?>assets/img/banner13.jpg); background-size:cover; ">-->
+		<!--<div class="swiper-slide" style="background-image:url(http://adlgm.in.net/assets/img/banner13.jpg); background-size:cover; ">-->
 		<div class="swiper-slide" >
 		        <img src="<?php echo base_url();?>assets/img/banner13.jpg" style="width:100%; height:90%; padding-left:40px;">
 			<div class="container">
@@ -83,7 +83,7 @@
 			
 			<!-- Slide 4 Start -->
 			
-			<!--<div class="swiper-slide" style="background-image:url(<?php echo base_url();?>assets/img/banner14.jpg); background-size:cover;">-->
+			<!--<div class="swiper-slide" style="background-image:url(http://adlgm.in.net/assets/img/banner14.jpg); background-size:cover;">-->
 			<div class="swiper-slide" >
 		        <img src="<?php echo base_url();?>assets/img/banner14.jpg" style="width:100%; height:90%; padding-left:40px;">
 			<div class="container">
@@ -110,6 +110,7 @@
     <div class="swiper-pagination"></div>	
 </div>
 <!-- Slider END -->
+<!-- Slider END -->
 
 
 
@@ -117,9 +118,9 @@
 <div class="section-block">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5 col-sm-12 col-12">
+			<div class="col-md-12 col-sm-12 col-12">
 				<div class="section-heading left-holder wow fadeIn animated" data-wow-delay=".1s">
-					<h4 class="bold">Introduction <span class="italic libre-baskerville primary-color " style="font-color:#1949b5 !important;">Next Money Pvt. Ltd. </span></h4>
+					<h2 class="bold">Introduction <span class="italic libre-baskerville primary-color " style="font-color:#1949b5 !important;">Next Money Pvt. Ltd. </span></h2>
 					<div class="section-heading-line"></div>
 				</div>
 				<div class="text-content wow fadeIn animated" data-wow-delay=".15s">
@@ -358,6 +359,10 @@
 		</div>
 	</div>
 </div>
+</div>
+</div>
+</div>
+
 <!-- Action Box END -->
 
 

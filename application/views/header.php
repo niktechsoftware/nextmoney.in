@@ -134,15 +134,7 @@
 				<li><a href="<?php echo base_url();?>index.php/welcome">Home</a>
 					
 				</li>										
-				<li><a href="#">About Us</a>
-					<ul class="nav-dropdown">
-						<li><a href="<?php echo base_url();?>index.php/welcome/read">About Us</a></li>
-						<li><a href="<?php echo base_url();?>index.php/welcome/cmd_view">CMD View</a></li>
-						<li><a href="<?php echo base_url();?>index.php/welcome/legal">Legal</a></li>
-						<li><a href="<?php echo base_url();?>index.php/welcome/bankdetails">Bank Details</a></li>
-						
-					</ul>
-				</li>				
+				<li><a href="<?php echo base_url();?>index.php/welcome/read">About Us</a></li>			
 				<li><a href="<?php echo base_url();?>index.php/welcome/bookproduct">Products</a>
 					<!--<ul class="nav-dropdown">
 						<li><a href="<?php echo base_url();?>index.php/welcome/bookproduct">Booking Products</a></li>
@@ -150,10 +142,10 @@
 						<li><a href="<?php echo base_url();?>index.php/welcome/">Re-Purchase Products</a></li>
 					</ul>-->
 				</li>
-				<li><a href="<?php echo base_url();?>assets/img/pp.pdf">Income Plan</a></li>
+				
 				<li><a href="<?php echo base_url();?>index.php/welcome/our_plan">Our Plans</a></li>
 				<li><a href="<?php echo base_url();?>index.php/welcome/registration">Registration</a></li>
-				<li><a href="<?php echo base_url();?>adlsoft/" target="_blank">Login</a></li>
+				<li><a href="http://gfinch.co.in/nmfinal/nM/" target="_blank">Login</a></li>
 				<li><a href="#">Gallery</a></li>												
 				<li><a href="<?php echo base_url();?>index.php/welcome/contact">Contact Us</a></li>												
 			</ul>
