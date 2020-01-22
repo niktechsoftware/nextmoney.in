@@ -448,23 +448,26 @@
     }
 
     function updateLevelIncome($cid,$level){
-    	if(($level<13)&&($cid > 0)){
+    	
+    	if(($level < 13)&&($cid > 0)){
     		$this->db->where("id",$cid);
     		$joid = $this->db->get("customer_info")->row();
-    	if($joid->joiner_id>0){
+    	if($joid->joiner_id > 0 ){
+    		
     			$tblnm="invoice_serial";
     			$maxid=$this->mpinmodel->pin_max($tblnm)+1;
     			$id1=1000+$maxid;
     			$invoice_number="NMI".$id1;
     			$this->db->where("level",$level);
     			$msp = $this->db->get("master_spincome")->row();
+    			
     			$this->db->where("c_id",$joid->joiner_id);
     			$this->db->where("level",$level);
     			$this->db->where("amount",$msp->income);
     			$this->db->where("gen_from",$cid);
     			$cheoldv = $this->db->get("direct_income");
     			
-    			if($cheoldv->num_rows()<1){
+    			if($cheoldv->num_rows()< 1){
     				$dataincome = array(
     						"c_id"=>$joid->joiner_id,
     						"ttype"=>1,
@@ -482,10 +485,11 @@
     			);
     			$this->db->insert("invoice_serial",$invoice);
     			}
-    			$level=$level++;
-    			$this->updateLevelIncome($joid->joiner_id,$level);
+    			$ulevel=$level+1;
+    			$this->updateLevelIncome($joid->joiner_id,$ulevel);
     		
-    	}}
+    	}
+    	}
     	
     	
     }

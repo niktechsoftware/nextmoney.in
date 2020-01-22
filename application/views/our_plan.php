@@ -77,7 +77,7 @@ h4 {
 				            </div>
 				                <div class="row">
         						    <div class="col-md-4">
-        						        <img  src="<?php echo base_url();?>assets/img/cs-converted.png" style="float:right;width:300px; height:400px;">
+        						        <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
         						    </div>
         			
 					
@@ -95,7 +95,7 @@ h4 {
 					   </div>
 					        <div class="row">
     						    <div class="col-md-4">
-    						         <img  src="<?php echo base_url();?>assets/img/cs-converted.png" style="float:right;width:300px; height:400px;">
+    						         <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
     						    </div>
     						    <div class="col-md-8">
     						        <center><table style="background-color:antiquewhite; width:60%;height:30%;margin-top:5%;" class="table table-bordered">
@@ -131,7 +131,7 @@ h4 {
 					   </div>
 					   	<div class="row">
     						    <div class="col-md-4">
-    						        <img  src="<?php echo base_url();?>assets/img/cs-converted.png" style="float:right;width:300px; height:400px;">
+    						        <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
     						    </div>
     						    <div class="col-md-8">
     						        	<center><table style="background-color:antiquewhite; width:60%;height:30%;margin-top:5%;" class="table table-bordered">

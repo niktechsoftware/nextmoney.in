@@ -145,7 +145,9 @@
 				
 				<li><a href="<?php echo base_url();?>index.php/welcome/our_plan">Our Plans</a></li>
 				<li><a href="<?php echo base_url();?>index.php/welcome/registration">Registration</a></li>
-				<li><a href="http://gfinch.co.in/nmfinal/nM/" target="_blank">Login</a></li>
+
+				<li><a href="<?php echo base_url();?>nM/" target="_blank">Login</a></li>
+
 				<li><a href="#">Gallery</a></li>												
 				<li><a href="<?php echo base_url();?>index.php/welcome/contact">Contact Us</a></li>												
 			</ul>
