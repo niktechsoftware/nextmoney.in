@@ -59,8 +59,8 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i data-feather="command"></i><span>Transactions</span></a>
               <ul class="dropdown-menu">
-                   <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/1">Level Income</a></li>
-                <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/2">Sponsor Income</a></li>
+                   <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/1">Sponsor Income</a></li>
+                <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/2">Single Leg Income</a></li>
                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/3">Auto Pool Income</a></li>
                 <li><a class="nav-link" href="<?php echo base_url();?>index.php/clogin/income/4">Royalty Income</a></li>
               

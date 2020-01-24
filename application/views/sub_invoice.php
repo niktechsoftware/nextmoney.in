@@ -20,8 +20,7 @@
                 			<tr class="text-uppercase">
                 				<th>Name</th>
                 				<td><label><?php echo $row->customer_name;?></label></td>
-                					<th>Father Name</th>
-                				<td><label><?php echo $row->fname;?></label></td>
+                				
                 			</tr>
                 		
                 			
@@ -68,7 +67,7 @@
                 			</tr>
                 		
                 				<tr>
-                			    <th colspan="4">Congratulations your registration is Under Process.Please pay 1449 Rs for Activation</th>
+                			    <th colspan="4">Congratulations your registration is Under Process.Please pay 550 Rs for Activation</th>
                 			</tr>
                 				<tr>
                 			    <th colspan="4"><span style="font-size:14px;color:red">Note :-</span><span style="color:red;font-size:12px;">Your registration will be automatically cancelled if you do not pay the mentioned amount within 12 hours.</span></th>

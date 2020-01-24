@@ -1,17 +1,3 @@
-Samrat Shukla
-
-
-
-
-<div class="mfp-content"><div id="newslater-popup" class="white-popup-block open align-center">
-  <div class="nl-popup-main">
-    <div class="nl-popup-inner">
-      <div class="newsletter-inner"> 
-        <img src="http://adlgm.in.net/assets/img/bon.jpeg">
-      </div>
-    </div>
-  </div>
-<button title="Close (Esc)" type="button"  class="close agree" class="mfp-close"><i class="ti-close"></i></button></div></div>
 
 
 
@@ -128,7 +114,8 @@ Samrat Shukla
 					
 				</div>
 
-		
+		</div>
+	</div>
 	</div>
 </div>
 <!-- Services Section END -->
@@ -373,10 +360,6 @@ Samrat Shukla
 <!-- Footer END -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
 <script>
-  $(window).load(function() {
-    $.magnificPopup.open({
-      items: {src: '#newslater-popup'},type: 'inline'}, 0);
-  });
 
 $('.window .close').click(function (e) {
 //Cancel the link behavior

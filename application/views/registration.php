@@ -63,15 +63,12 @@
 								</div>
 
 								<div class="row" id="regForm">
+								
 									<div class="col-md-12 col-lg-12 col-xs-12">
 										<div class="row">
+										
 											<div class="col-xs-6 col-md-6 col-lg-6">
-												
-
-											</div>
-											<div class="col-xs-6 col-md-6 col-lg-6">
-
-												<div class="form-group row">
+													<div class="form-group row">
 													<div class="col-md-3">
 														<label>Name<span title="Required" style="color: red;">*</span></label>
 													</div>
@@ -81,36 +78,13 @@
 																value="<?php echo set_value('name'); ?>" name="name"
 																id="name" required="required">
 														</div>
-									<?php echo form_error('name');?>
-                                </div>
+                    									<?php echo form_error('name');?>
+                                                    </div>
 												</div>
 
-
 											</div>
-										</div>
-									</div>
-
-									<div class="col-md-12 col-lg-12 col-xs-12">
-										<div class="row">
-											<div class="col-xs-6 col-md-6 col-lg-6">
-
-												<div class="form-group row">
-													<div class="col-md-3">
-														<label>Father / Husband Name<span title="Required"
-															style="color: red;">*</span></label>
-													</div>
-													<div class="col-md-9">
-														<div class="form-group">
-															<input type="text" class="form-control"
-																value="<?php echo set_value('fname'); ?>" name="fname"
-																id="fname" required="required">
-														</div>
-					                    <?php echo form_error('fname');?> 
-					                   </div>
-												</div>
 
 
-											</div>
 											<div class="col-xs-6 col-md-6 col-lg-6">
 												<div class="form-group row">
 													<div class="col-md-3 ">
@@ -213,17 +187,19 @@
 											<div class="col-xs-6 col-md-6 col-lg-6">
 												<div class="form-group row">
 													<div class="col-md-3">
-														<label>Date Of Birth<span title="Required"
-															style="color: red;">*</span></label>
+														<label>Password<span title="Required" style="color: red;">*</span></label>
 													</div>
+
 													<div class="col-md-9">
 														<div class="form-group">
-															<input type="date" class="form-control datemask"
-																name="dob" value="<?php echo set_value('dob'); ?>"
-																id="dob" required="required">
-														</div> 
-                               			  <?= form_error('dob'); ?> 
-					               </div>
+															<input type="password"
+																value="<?php echo set_value('password'); ?>"
+																required="required" class="form-control pwstrength"
+																data-indicator="pwindicator" name="password"
+																id="password">
+														</div>
+													</div>
+
 
 												</div>
 											</div>
@@ -267,26 +243,8 @@
 									<div class="col-md-12 col-lg-12 col-xs-12">
 										<div class="row">
 
-											<div class="col-xs-6 col-md-6 col-lg-6">
-												<div class="form-group row">
-													<div class="col-md-3">
-														<label>Password<span title="Required" style="color: red;">*</span></label>
-													</div>
-
-													<div class="col-md-9">
-														<div class="form-group">
-															<input type="password"
-																value="<?php echo set_value('password'); ?>"
-																required="required" class="form-control pwstrength"
-																data-indicator="pwindicator" name="password"
-																id="password">
-														</div>
-													</div>
-
-
-												</div>
-											</div>
-											<div class="col-xs-6 col-md-6 col-lg-6">
+										
+												<div class="col-xs-6 col-md-6 col-lg-6">
 												<div class="form-group row">
 													<div class="col-md-3">
 														<label>Confirm Password<span title="Required"
@@ -303,13 +261,9 @@
                                 </div>
 												</div>
 											</div>
-										</div>
-									</div>
-
-									<div class="col-md-12 col-lg-12 col-xs-12">
-										<div class="row">
-											<div class="col-xs-6 col-md-6 col-lg-6">
-												<div class="form-group row">
+										
+											<div class="col-xs-6 col-md-6 col-lg-6">	
+											<div class="form-group row">
 													<div class="col-md-3"></div>
 													<div class="col-md-9">
 														<div class="form-group mb-0">
@@ -324,9 +278,15 @@
 													</div>
 
 												</div>
-											</div>
+												</div>
+										
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-12 col-xs-12">
+										<div class="row">
 											<div class="col-xs-6 col-md-6 col-lg-6">
-												<div class="form-group row">
+													<div class="form-group row">
 													<div class="col-md-3"></div>
 													<div class="col-md-9">
 														<div class="form-group">
@@ -338,6 +298,7 @@
 													</div>
 												</div>
 											</div>
+										
 										</div>
 									</div>
 

@@ -23,7 +23,7 @@
 |
 */
 
-$config['base_url'] = 'http://localhost/nextmoney.in/nM/';
+$config['base_url'] = 'http://nextmoney.in/nM/';
 
 // $config['base_url'] = 'http://localhost:8080/adlgm.in/adlsoft';
 

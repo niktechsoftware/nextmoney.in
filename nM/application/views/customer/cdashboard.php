@@ -9,11 +9,10 @@
                 <div class="card-statistic-3">
                   <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
                   <div class="card-content">
-                    <h4 class="card-title">Level Income</h4>
+                    <h4 class="card-title">Sponsor Income</h4>
                     <span><?php 
                  $total=0;
                     $this->db->select_sum("amount");
-                  
                     $this->db->where("c_id",$this->session->userdata("customer_id"));
                     $this->db->where("ttype",1);
                    $sbal= $this->db->get("direct_income");
@@ -27,11 +26,11 @@
                     ?></span>
                     <div class="progress mt-1 mb-1" data-height="8">
                       <div class="progress-bar l-bg-purple" role="progressbar" data-width="25%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                        aria-valuemin="0" aria-valuemax="100">pair</div>
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap">p</span>
                     </p>
                   </div>
                 </div>
@@ -42,7 +41,7 @@
                 <div class="card-statistic-3">
                   <div class="card-icon card-icon-large"><i class="fa fa-briefcase"></i></div>
                   <div class="card-content">
-                    <h4 class="card-title">Sponsor Income</h4>
+                    <h4 class="card-title">Single Leg Income</h4>
                     <span><?php 
                 
                     $this->db->select_sum("amount");
@@ -62,7 +61,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -93,7 +92,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -124,7 +123,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -133,7 +132,41 @@
           </div>
            
            <div class="row ">
-           
+          <!-- start level person-->
+                <div class="col-xl-3 col-lg-6">
+                 <div class="card l-bg-green-dark">
+                <div class="card-statistic-3">
+                  <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
+                  <div class="card-content">
+                    <h4 class="card-title">Your Level </h4>
+                    <span><?php 
+                   
+                   $level =1;
+                   $sesid[$level]= $this->session->userdata("customer_id");
+                  $tot12 = $this->tree->levelPersonData($sesid,$level);
+                 if($tot12){
+                 print_r($tot12);
+                  }else{
+                       echo "0.00";
+                  }
+                    ?></span>
+                    <div class="progress mt-1 mb-1" data-height="8">
+                      <div class="progress-bar l-bg-purple" role="progressbar" data-width="25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mb-0 text-sm">
+                      <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
+                      <span class="text-nowrap"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+            <!--  <//end level person-->
+              
+              
+              
                 <div class="col-xl-3 col-lg-6">
                  <div class="card l-bg-green-dark">
                 <div class="card-statistic-3">
@@ -160,7 +193,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -198,7 +231,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>

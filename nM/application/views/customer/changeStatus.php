@@ -10,11 +10,11 @@
 						</div>
 							
 							<div class="card-body">
-								<div class="alert alert-info">Note : - Now Pay 1499/- Rupees for activation ON bellow given Accoutn Details ditails.
-								<br> Account Number	:  5987101000311
-								<br> Account Name 	:  Sabare Alam
+								<div class="alert alert-info">Note : - Now Pay 550/- Rupees for activation ON bellow given Accoutn Details ditails.
+								<br> Account Number	:  598XXXX
+								<br> Account Name 	:  XXXXXXX
 								<br> IFSC CODE		:  CNRB0005987
-								<br> Account Address : Kasia
+								<br> Account Address : Kanpur
 								
 								Note: After tranfer Amount please upload payment slip or fill transaction number below given box.
 								 

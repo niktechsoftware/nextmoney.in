@@ -1,4 +1,5 @@
-<style>
+
+	<style>
 
 h4 {
   position: relative;
@@ -38,7 +39,6 @@ h4 {
 
 </style>
 
-
 <?php $this->load->view("header")?>
 <!--<div id="UpdateProgress" style="display:none;">-->
 	
@@ -55,16 +55,18 @@ h4 {
 							<center><h4>Our Plans For Customers</h4></center>
 						</div>
 						<div style="margin-top:5%">
-						    <center><h4>SILVER</h4></center>
+						    <center><h4>Auto Pool Stages And Groups.</h4></center>
 						</div>
 						    	
 						    <div style="background-color:lightblue;">
-						        
+						          <div class="row col-md-12">
 						 
-						            <div class="row">
+						          
     						            <div class="col-md-5">
     						                 <label style="margin-top:1%; text-align:left; float:right;">
-    						                 Silver  सिल्वर के लिए 12-आई -डी स्पोंसर करना होता है        
+    						                 1) . Silver  सिल्वर के लिए 12-आई -डी स्पोंसर करना होता है |       <br>
+    						                 2). Gold  के लिए 20 -आई -डी स्पोंसर करना होता है   |        <br>
+    						                 3).  Diamond  के लिए 30 -आई -डी स्पोंसर करना होता है |     <br>
                                             
                                              </label>
     						            </div>
@@ -74,98 +76,86 @@ h4 {
                                   
                                    
 				          
-				            </div>
-				                <div class="row">
-        						    <div class="col-md-4">
-        						        <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
+				          
+        						    <div class="col-md-6">
+        						        <img  src="<?php echo base_url();?>assets/img/common.jpg" style="float:right;width:500px; height:300px;">
         						    </div>
-        			
-					
+        			        </div>
+				            </div>
 						<div style="margin-top:5%">
-						    <center><h4>GOLD</h4></center>
+						    <center><h4>Sponsor Level Income</h4></center>
 						</div>
 							
 						<div style="background-color:lightblue;">
-						    <div class="row">
+						    <div class="row col-md-12">
 						        <div class="col-md-5">
 						            <label style="margin-top:1%;text-align:left; float:right;">
 						                                 
-                            गोल्ड के लिए 20 -आई -डी स्पोंसर करना होता है        
+                                   
                                         	        
 					   </div>
-					        <div class="row">
-    						    <div class="col-md-4">
-    						         <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
+					       
+    						    <div class="col-md-6">
+    						         <img  src="<?php echo base_url();?>assets/img/spincome.jpg" style="float:right;width:400px; height:300px;">
     						    </div>
-    						    <div class="col-md-8">
-    						        <center><table style="background-color:antiquewhite; width:60%;height:30%;margin-top:5%;" class="table table-bordered">
-        							    <tbody>
-            							 <?php $silver = $this->db->get('gold_reward')->result();
-            							 //print_r($silver);
-            							 $i=1;
-            						    foreach($silver as $sdata)
-            						    { ?>
-            							        <tr>
-            							            <td><?php echo $i."Reward";?></td>
-            							            <td><?php echo $sdata->pair_no."&nbsp;Pair";?></td>
-            							            <td><?php echo $sdata->reward;?></td>
-            							        </tr>
-            							   
-            						    <?php $i++; }
-            						    ?>
-            						    </tbody>
-        							</table></center>
-    						    </div>
+    						   
     						</div>
-						    
+					</div>
 						<div style="margin-top:5%">
-						    <center><h4>DIAMOND</h4></center>
+						    <center><h4>Single Leg Income</h4></center>
 						</div>
 						
 						<div style="background-color:lightblue;">
-						    <div class="row">
+						    <div class="row col-md-12">
 						        <div class="col-md-5">
 						             <label style="margin-top:1%;text-align:left; float:right;">
 						                         
-                            डायमण्ड के लिए 30 -आई -डी स्पोंसर करना होता है            
+                                 
 					   </div>
-					   	<div class="row">
-    						    <div class="col-md-4">
-    						        <img  src="<?php echo base_url();?>assets/img/cs-converted.jpg" style="float:right;width:300px; height:400px;">
+					  
+    						    <div class="col-md-6">
+    						        <img  src="<?php echo base_url();?>assets/img/slincome.jpg" style="float:right;width:400px; height:300px;">
     						    </div>
-    						    <div class="col-md-8">
-    						        	<center><table style="background-color:antiquewhite; width:60%;height:30%;margin-top:5%;" class="table table-bordered">
-            							    <tbody>
-                							 <?php $silver = $this->db->get('diamond_reward')->result();
-                							 //print_r($silver);
-                							 $i=1;
-                						    foreach($silver as $sdata)
-                						    { ?>
-                							        <tr>
-                							            <td><?php echo $i."Reward";?></td>
-                							            <td><?php echo $sdata->pair_no."&nbsp;Pair";?></td>
-                							            <td><?php echo $sdata->reward;?></td>
-                							        </tr>
-                							   
-                						    <?php $i++; }
-                						    ?>
-                						    </tbody>
-        							    </table></center> 
-    						    </div>
-    						</div>
+    						 
+					</div></div>
 					
+						<div style="margin-top:5%">
+						    <center><h4>Royalty income</h4></center>
+						</div>
 						
-							
+						<div style="background-color:lightblue;">
+						    <div class="row col-md-12">
+						        <div class="col-md-5">
+						             <label style="margin-top:1%;text-align:left; float:right;">
+						                         
+                                 
+					   </div>
+					  
+    						    <div class="col-md-6">
+    						        <img  src="<?php echo base_url();?>assets/img/royalty.jpg" style="float:right;width:400px; height:300px;">
+    						    </div>
+    						 
+					</div></div>
+						
 							<div style="margin-top:5%">
-						        <center><h4>Auto Pul Income</h4></center>
+						    <center><h4>Auto Pool Income Process</h4></center>
+						</div>
+						
+						<div style="background-color:lightblue;">
+						    <div class="row col-md-12">
+						        
+						
+						    <div class="col-md-4"><br>
+						        <img  src="<?php echo base_url();?>assets/img/kois.png" style="float:right;width:500px; height:200px;">
+						        (जो एक आई-डी सिल्वर होती है वह आई-डी Autopull income में चली जाती ह |)
 						    </div>
-						    <div style="margin-top:1%;text-align:center;">
-						<center><label style="background-color:grey;color:white;"> जो एक आई-डी सिल्वर होती है वह आई-डी Autopull income में चली जाती है |   </label></center></div>
-						<div class="row" style="padding-left:10%;padding-right:10%;">
-						    <div class="col-md-4">
-						        <img  src="<?php echo base_url();?>assets/img/kois.png" style="float:right;width:300px; height:400px;">
+						     <div class="col-md-6">
+						        <img  src="<?php echo base_url();?>assets/img/autopool.jpg" style="float:right;width:400px; height:300px;">
 						    </div>
-						   
+						</div>  
+						
+					</div>	
+						
 <!-- Data Tables Stripped & Bordered Section END -->
 
  

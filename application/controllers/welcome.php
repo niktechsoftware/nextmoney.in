@@ -77,7 +77,7 @@ public function contact()
 		//$this->form_validation->set_rules('parent_id','Sponsor ID','required|is_unique[customer_info.username]');
 		$this->form_validation->set_rules('name','Customer Name','required');
 		//$this->form_validation->set_rules('selectTree','Please Select Position','required');
-		$this->form_validation->set_rules('fname','Father Name','required');
+		//$this->form_validation->set_rules('fname','Father Name','required');
 		$this->form_validation->set_rules('address','Address','required');
 		$this->form_validation->set_rules('city','City','required');
 		$this->form_validation->set_rules('state','State','required');
@@ -87,7 +87,7 @@ public function contact()
 		$this->form_validation->set_rules('password','Password','matches[confirm_pwd]');
 		$this->form_validation->set_rules('confirm_pwd','Password','matches[password]');
 	
-		$this->form_validation->set_rules('dob','Date Of Birth','required');
+		//$this->form_validation->set_rules('dob','Date Of Birth','required');
 		$this->form_validation->set_rules('customRadioInline1','Gender','required');
 		if($this->form_validation->run()){
 			$tblnm ="customer_info";
@@ -104,19 +104,19 @@ public function contact()
 			if($cid){
 			//$ljoinerID= $this->input->post('lJoinerID');
 			$name= $this->input->post('name');
-			$fname= $this->input->post('fname');
+		//	$fname= $this->input->post('fname');
 			$address= $this->input->post('address');
 			$pinno= $this->input->post('pinno');
 			$mobile= $this->input->post('mobile');
 			$gender= $this->input->post('customRadioInline1');
-			$dob= $this->input->post('dob');
+		//	$dob= $this->input->post('dob');
 			$password= $this->input->post('password');
 			$parent_id= $this->input->post('parent_id');
 			$city= $this->input->post('city');
 			$state= $this->input->post('state');
 			$data= array(
 					'parent_id'=>$rjoinerID,
-					'fname'=>$fname,
+					'fname'=>"",
 					'joiner_id'=>$cid,
 					'customer_name'=>$name,
 					'username'=>$username1,
@@ -131,12 +131,12 @@ public function contact()
 					
 					'status'=>0,
 					'joining_date'=>date('Y-m-d'),
-					'dob'=>$dob
+					'dob'=>""
 			);
 			if($this->cmodel->insertCustomer($data)){
 				
-					 $msg = "Dear " . $name . " Your Registration is successfully Done,Your Username is ".$username." and password is ".$password.
-							"Please Login to update http://www.nm.in.net your details And Contact to Admin for Activate your account.";
+					 $msg = "Dear " . $name . " Your Registration is successfully Done,Your Username is ".$username1." and password is ".$password.
+							"Please Login to update http://www.nextmoney.in your details And Contact to Admin for Activate your account.";
                  	sms($mobile, $msg);
 					redirect('welcome/cconpage/'.$maxid);
 				
@@ -173,7 +173,7 @@ public function contact()
 			       $this->load->library("email");
 			       $this->email->from("info@adl.in.net",'ADlGM Sales Pvt.Ltd.');
 			    	$this->email->subject('Thanks For enquiry us');
-		        	$this->email->message('Your Details are Successfully seved and we will contact you soon. Thanks ADlGM Sales Pvt.Ltd., Mau');
+		        	$this->email->message('Your Details are Successfully seved and we will contact you soon. Thanks Next Money Pvt.Ltd.');
 		
 			       $this->email->to($email);
 			      $senddt =$this->email->send();
