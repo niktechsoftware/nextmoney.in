@@ -1,10 +1,10 @@
 <?php
 function sms($number,$msg)
 {  
-$url="http://bulksms.niktechsoftware.com/vendorsms/pushsms.aspx?user=adl&password=adl@12312&msisdn=".$number."&sid=ADLGMP&msg=".urlencode($msg)."&fl=0&gwid=2";
+//$url="http://bulksms.niktechsoftware.com/vendorsms/pushsms.aspx?user=adl&password=adl@12312&msisdn=".$number."&sid=ADLGMP&msg=".urlencode($msg)."&fl=0&gwid=2";
 	
 //$url="http://bulksms.gfinch.in/api/sendmsg.php?user=ramdoot&pass=ghazipur@123&sender=RAMDOT&phone=".$number."&text=".urlencode($msg)."&priority=ndnd&stype=normal";
-	//$url = "http://mysms.sms7.biz/rest/services/sendSMS/sendGroupSms?AUTH_KEY=".$authkey."&message=".urlencode($message)."&senderId=".$senderID."&routeId=1&mobileNos=".$number."&smsContentType=english";
+	$url = "http://mysms.sms7.biz/rest/services/sendSMS/sendGroupSms?AUTH_KEY=8c741dbd9a7fa61e5da7d2d2b54d7b51&message=".urlencode($msg)."&senderId=NMONEY&routeId=1&mobileNos=".$number."&smsContentType=english";
 	$ch = curl_init();
 	curl_setopt($ch,CURLOPT_URL,$url);
 	curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);

@@ -8,13 +8,14 @@
 <head>
 	<title>
 	Next Money Pvt. Ltd.
-</title><meta charset="UTF-8" /><link rel="shortcut icon" href="<?php echo base_url();?>assets/img/logos/logo.jpg" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</title><meta charset="UTF-8" /><link rel="shortcut icon" href="<?php echo base_url();?>assets/img/logos/adl1.jpg" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.min.css" />
 
 	<!-- Themify icons -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/themify-icons.css" />
+
 	
 	<!-- Font-Awesome -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/fontawesome-all.css" />  
@@ -88,7 +89,7 @@
 					<!--<li><i class="fas fa-map-marker-alt"></i>Address:Word No.4 Ambedkar Nagar Kasia Kushinagar 274402
 </li>-->
 					<li><i class="fas fa-phone-square"></i>+91 8115857321</li>
-					<li><i class="fa fa-envelope"></i>info@gmail.com</li>
+					<li><i class="fa fa-envelope"></i>admin@nextmoney.in</li>
 				</ul>					
 			</div>
 			<div class="col-md-3 col-12">

@@ -49,6 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
+/* $db['default']['username'] = 'gfincpnt_edoos';
+$db['default']['password'] = 'Rahul!123singh';
+$db['default']['database'] = 'gfincpnt_edoos'; */
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'nextmon';

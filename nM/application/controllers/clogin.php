@@ -105,7 +105,7 @@ class Clogin extends CI_Controller{
 		//$this->form_validation->set_rules('parent_id','Sponsor ID','required|is_unique[customer_info.username]');
 		$this->form_validation->set_rules('name','Customer Name','required');
 		//$this->form_validation->set_rules('selectTree','Please Select Position','required');
-		$this->form_validation->set_rules('fname','Father Name','required');
+	
 		$this->form_validation->set_rules('address','Address','required');
 		$this->form_validation->set_rules('city','City','required');
 		$this->form_validation->set_rules('state','State','required');
@@ -115,7 +115,7 @@ class Clogin extends CI_Controller{
 		$this->form_validation->set_rules('password','Password','matches[confirm_pwd]');
 		$this->form_validation->set_rules('confirm_pwd','Password','matches[password]');
 
-		$this->form_validation->set_rules('dob','Date Of Birth','required');
+		
 		$this->form_validation->set_rules('customRadioInline1','Gender','required');
 		if($this->form_validation->run()){
 			$tblnm ="customer_info";
@@ -133,13 +133,13 @@ class Clogin extends CI_Controller{
 			 
 			//$ljoinerID= $this->input->post('lJoinerID');
 			$name= $this->input->post('name');
-			$fname= $this->input->post('fname');
+		//	$fname= $this->input->post('fname');
 			$address= $this->input->post('address');
 			$pinno= $this->input->post('pinno');
 			$mobile= $this->input->post('mobile');
 			
 			$gender= $this->input->post('customRadioInline1');
-			$dob= $this->input->post('dob');
+			//$dob= $this->input->post('dob');
 			$password= $this->input->post('password');
 			//$parent_id= $this->input->post('parent_id');
 			$city= $this->input->post('city');
@@ -149,7 +149,7 @@ class Clogin extends CI_Controller{
 		
 			$data= array(
 					'parent_id'=>$rjoinerID,
-					'fname'=>$fname,
+					'fname'=>"",
 					'joiner_id'=>$cid,
 					'customer_name'=>$name,
 					'username'=>$username1,
@@ -161,16 +161,16 @@ class Clogin extends CI_Controller{
 					'gender'=>$gender,
 					'pin'=>$pinno,
 					'pannumber'=>$panno,
-					'adhaarnumber'=>$aadhar,
+					'adhaarnumber'=>"",
 					'status'=>0,
 					'joining_date'=>date('Y-m-d'),
-					'dob'=>$dob
+					'dob'=>""
 			);
 			if($this->cmodel->insertCustomer($data)){
 			
 			
 					 $msg = "Dear " . $name . " Your Registration is successfully Done,Your Username is ".$username1." and password is ".$password.
-							"Please Login to http://www.adlgm.in.net update your details And Contact to Admin for Activate your account";
+							"Please Login to http://www.nextmoney.in update your details And Contact to Admin for Activate your account";
                  		sms($mobile, $msg);
 					redirect('clogin/cconpage/'.$maxid);
 				}
@@ -240,7 +240,7 @@ class Clogin extends CI_Controller{
 				$image_path = realpath(APPPATH . '../assets/img/pay/');		  
 				  $config['upload_path'] = $image_path;
 				  $config['allowed_types'] = 'jpg|jpeg|png|bmp';
-				  $config['max_size'] = '500';
+				  $config['max_size'] = '2000';
 				  $config['file_name'] = $photo_name;
 				  if (!empty($_FILES['photo']['name']))
 				   {

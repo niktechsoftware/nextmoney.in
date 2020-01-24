@@ -1,7 +1,23 @@
 <?php 
     class tree extends CI_Model{
         
+        public function levelPersonData($joiner_id,$level){
+            $this->db->where_in("joiner_id",$joiner_id);
+           $getr =  $this->db->get("customer_info");
+           
+           if($getr->num_rows()>0){
+                     
+                      echo "Level-".$level." Downline-".$getr->num_rows()."<br>";
+                     $alln=array(); $i=0;  foreach($getr->result() as $gs):
+                          $alln[$i]=$gs->id;
+                      $i++;  endforeach;
+                      $level=$level+1;
+               $this->levelPersonData($alln,$level);
+                 return true;
+        }
         
+        
+        }
     	public function selectlegleft($data1){
     	
     		$this->db->where("c_id", $data1);

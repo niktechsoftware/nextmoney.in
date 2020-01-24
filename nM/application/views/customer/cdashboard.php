@@ -9,11 +9,10 @@
                 <div class="card-statistic-3">
                   <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
                   <div class="card-content">
-                    <h4 class="card-title">Level Income</h4>
+                    <h4 class="card-title">Sponsor Income</h4>
                     <span><?php 
                  $total=0;
                     $this->db->select_sum("amount");
-                  
                     $this->db->where("c_id",$this->session->userdata("customer_id"));
                     $this->db->where("ttype",1);
                    $sbal= $this->db->get("direct_income");
@@ -27,11 +26,11 @@
                     ?></span>
                     <div class="progress mt-1 mb-1" data-height="8">
                       <div class="progress-bar l-bg-purple" role="progressbar" data-width="25%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                        aria-valuemin="0" aria-valuemax="100">pair</div>
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap">p</span>
                     </p>
                   </div>
                 </div>
@@ -42,7 +41,7 @@
                 <div class="card-statistic-3">
                   <div class="card-icon card-icon-large"><i class="fa fa-briefcase"></i></div>
                   <div class="card-content">
-                    <h4 class="card-title">Sponsor Income</h4>
+                    <h4 class="card-title">Single Leg Income</h4>
                     <span><?php 
                 
                     $this->db->select_sum("amount");
@@ -62,7 +61,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -93,7 +92,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -124,7 +123,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i></span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -133,7 +132,99 @@
           </div>
            
            <div class="row ">
-           
+          <!-- start level person-->
+                <div class="col-xl-3 col-lg-6">
+                 <div class="card l-bg-green-dark">
+                <div class="card-statistic-3">
+                  <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
+                  <div class="card-content">
+                    <h4 class="card-title">Sponsor Level Downline</h4>
+                    <span><?php 
+                   
+                   $level =1;
+                   $sesid[$level]= $this->session->userdata("customer_id");
+                  $tot12 = $this->tree->levelPersonData($sesid,$level);
+                 if($tot12){
+                 
+                  }
+                    ?></span>
+                    <div class="progress mt-1 mb-1" data-height="8">
+                      <div class="progress-bar l-bg-purple" role="progressbar" data-width="25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mb-0 text-sm">
+                      <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
+                      <span class="text-nowrap"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+            <!--  <//end level person-->
+             <!--  //single leg person start -->
+              <div class="col-xl-3 col-lg-6">
+                 <div class="card l-bg-green-dark">
+                <div class="card-statistic-3">
+                  <div class="card-icon card-icon-large"><i class="fa fa-award"></i></div>
+                  <div class="card-content">
+                    <h4 class="card-title">Single Leg Downline</h4>
+                    <span><?php 
+                  $id = $this->session->userdata("customer_id"); 
+                  $this->db->where("id >",$id);
+                  $this->db->where("status",1);
+                  $totidactive = $this->db->get("customer_info");
+                  $mastersig = $this->db->get("sin_master_leg");
+                $k=1;$n=1;  foreach($mastersig->result() as $ror):
+                if($n<2){
+                  if($ror->team < $totidactive->num_rows()){
+                	echo "Level -".$k."   : Downline -".$ror->team;
+                	$k++;
+                	$this->db->where("id",$id);
+                	$this->db->where("level",$k);
+                	$this->db->where("ttype",2);
+                	$dsic=$this->db->get("direct_income");
+                	if($dsic->num_rows()>0){
+                		
+                	}else{
+                		
+                		$tblnm="invoice_serial";
+                		$maxid=$this->mpinmodel->pin_max($tblnm)+1;
+                		$id1=1000+$maxid;
+                		$invoice_number="NMI".$id1;
+                		$datad = array(
+                				"c_id"=>$id,
+                				"ttype"=>2,
+                				"amount"=>$ror->income,
+                				"invoice_no"=>$invoice_number,
+                				"gen_from"=>2,
+                				"level"=>$k
+                		);
+                	}
+                	}else{
+                		echo "Level -".$k."   : Downline -".$totidactive->num_rows();
+                		$k++;
+                		$n++;
+                	}
+                }
+                  endforeach;
+                    ?></span>
+                    <div class="progress mt-1 mb-1" data-height="8">
+                      <div class="progress-bar l-bg-purple" role="progressbar" data-width="25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mb-0 text-sm">
+                      <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
+                      <span class="text-nowrap"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+         <!--      //end single -->
+              
+              
                 <div class="col-xl-3 col-lg-6">
                  <div class="card l-bg-green-dark">
                 <div class="card-statistic-3">
@@ -160,7 +251,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -198,7 +289,7 @@
                     </div>
                     <p class="mb-0 text-sm">
                       <span class="mr-2"><i class="fa fa-arrow-up"></i> </span>
-                      <span class="text-nowrap">Pair</span>
+                      <span class="text-nowrap"></span>
                     </p>
                   </div>
                 </div>
@@ -323,4 +414,5 @@
             </div>
           </div>
           -->
-        
+      </section>
+      </div>  

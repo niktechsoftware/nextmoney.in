@@ -122,7 +122,7 @@
         	  
         	  $mobile = $checksv->row()->mobilenumber;
         	  $cname =$checksv->row()->customer_name;
-        	  $sms = "Dear Customer ".$cname."Your ID is Successfully Activated.Welcome to ADLGM Sales Pvt.Ltd. http://www.adlgm.in.net";
+        	  $sms = "Dear Customer ".$cname."Your ID is Successfully Activated.Welcome to Next Money Pvt.Ltd. http://www.nextmoney.in";
         	  sms($mobile,$sms);
         	  return true;
         	}else{
