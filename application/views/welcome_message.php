@@ -1,7 +1,3 @@
-
-
-
-
 <?php $this->load->view("header")?>
 <!-- Navbar END --> </div><!-- Slider START -->
 <!-- Navbar END --> </div><!-- Slider START -->
@@ -359,13 +355,5 @@
 <?php $this->load->view("footer")?>
 <!-- Footer END -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-<script>
 
-$('.window .close').click(function (e) {
-//Cancel the link behavior
-e.preventDefault();
 
-$('#mask').hide();
-$('.window').hide();
-});	
-</script>
