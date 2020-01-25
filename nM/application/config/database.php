@@ -49,17 +49,12 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-<<<<<<< HEAD:shashishanti/application/config/database.php
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-=======
-
+/* $db['default']['username'] = 'gfincpnt_edoos';
+$db['default']['password'] = 'Rahul!123singh';
+$db['default']['database'] = 'gfincpnt_edoos'; */
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'nextmon';
-
->>>>>>> 95b8add23ef4577d30a0551a94471bf7d3231a08:application/config/database.php
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
